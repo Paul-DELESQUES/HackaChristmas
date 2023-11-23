@@ -1,7 +1,12 @@
-import "./App.css";
+import "./styles/App.scss";
+import Actions from "./components/Actions";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Actions />
+    </>
+  );
 }
 
 export default App;
