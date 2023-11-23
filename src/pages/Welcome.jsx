@@ -1,11 +1,23 @@
+import { useEffect, useRef } from "react";
+import "../styles/Welcome.scss";
+import "../components/wScratchPad.min.js";
 import { welcome } from "../assets/video";
+import { texture } from "../assets/img";
 
 function Welcome() {
-  return (
-    <div className="welcome-ctn">
-      <video src={welcome} autoPlay loop muted />
-    </div>
-  );
+  const scratchRef = useRef(null);
+
+  useEffect(() => {
+    if (scratchRef.current && window.$) {
+      window.$(scratchRef.current).wScratchPad({
+        size: 150,
+        bg: welcome,
+        fg: texture,
+      });
+    }
+  }, []);
+
+  return <div id="scratch" ref={scratchRef}></div>;
 }
 
 export default Welcome;
