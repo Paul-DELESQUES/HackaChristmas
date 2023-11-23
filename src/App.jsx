@@ -1,7 +1,12 @@
-import "./App.css";
+import "./styles/App.scss";
+import Welcome from "./pages/Welcome";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Welcome />
+    </>
+  );
 }
 
 export default App;
