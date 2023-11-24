@@ -1,19 +1,38 @@
+import { useState } from "react";
 import { room } from "../assets/video";
 import GarlandCanvas from "../components/canvas/Garland";
-// import Garland2 from "../components/canvas/Garland2";
 import HouseTable from "../components/canvas/HouseTable";
 import SantaCanvas from "../components/canvas/Santa";
 import TreeCanvas from "../components/canvas/Tree";
+import Actions from "../components/Actions";
 import "../styles/Room.scss";
 
 function Room() {
+  const [buttonStates, setButtonStates] = useState({
+    gift: true,
+    socks: true,
+    light: true,
+    tree: true,
+    santa: true,
+    cat: true,
+    sound: true,
+  });
+
+  const handleClick = (buttonId) => {
+    setButtonStates((prevStates) => ({
+      ...prevStates,
+      [buttonId]: !prevStates[buttonId],
+    }));
+  };
+
   return (
     <section className="room-ctn">
       <video src={room} autoPlay loop muted />
-      <TreeCanvas />
-      <SantaCanvas />
-      <HouseTable />
-      <GarlandCanvas />
+      <Actions handleClick={handleClick} buttonStates={buttonStates} />
+      {!buttonStates.tree ? <TreeCanvas /> : ""}
+      {!buttonStates.santa ? <SantaCanvas /> : ""}
+      {!buttonStates.light ? <GarlandCanvas /> : ""}
+      {!buttonStates.socks ? <HouseTable /> : ""}
     </section>
   );
 }

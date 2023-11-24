@@ -29,9 +29,9 @@ const Tree = () => {
   );
 };
 
-const TreeCanvas = () => {
+const TreeCanvas = (isVisible) => {
   return (
-    <div className="tree-ctn">
+    <div className={`tree-ctn ${isVisible ? "visible" : ""}`}>
       <Canvas
         frameloop="demand"
         shadows

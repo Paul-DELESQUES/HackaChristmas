@@ -2,24 +2,7 @@ import { useState } from "react";
 import React from "react";
 import "../styles/_actions.scss";
 
-const Actions = () => {
-  const [buttonStates, setButtonStates] = useState({
-    gift: true,
-    socks: true,
-    light: true,
-    tree: true,
-    santa: true,
-    cat: true,
-    sound: true,
-  });
-
-  const handleClick = (buttonId) => {
-    setButtonStates((prevStates) => ({
-      ...prevStates,
-      [buttonId]: !prevStates[buttonId],
-    }));
-  };
-
+const Actions = ({ buttonStates, handleClick }) => {
   return (
     <>
       <div className="actionsContainer">
