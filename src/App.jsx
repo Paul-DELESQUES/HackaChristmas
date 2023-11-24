@@ -1,10 +1,13 @@
 import "./styles/App.scss";
+import Actions from "./components/Actions";
 import Welcome from "./pages/Welcome";
+
 
 function App() {
   return (
     <>
-      <Welcome />
+    <Welcome />
+    <Actions />
     </>
   );
 }
