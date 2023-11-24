@@ -71,7 +71,32 @@ $small-font-size: 0.813rem;
       // rotate: 60deg;
     }
 
-  
+    #trineo {
+      animation-name: trineoAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    }
+
+  @keyframes trineoAnimation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+   20% {
+    transform: translate(300px, 0px);
+  }
+  40% {
+    transform: translate(600px, 0px);
+  }
+  60% {
+    transform: translate(900px, 0px);
+  }
+  80% {
+    transform: translate(1200px, 0px);
+  }
+  100% {
+    transform: translate(1500px, 0px);
+  }
+}
 
   /*=============== BASE ===============*/
   * {
@@ -127,7 +152,9 @@ $small-font-size: 0.813rem;
 
   .trineo {
     width: 380px;
-    bottom: 15rem;
+    bottom: 7rem;
+    margin-left: 0;
+    rotate: 3deg;
   }
   
   .mountain2, .mountain3 {
@@ -153,6 +180,7 @@ $small-font-size: 0.813rem;
 .trineo {
     width: 580px;
     bottom: 20rem;
+    rotate: 10deg;
   }
 
   .title {

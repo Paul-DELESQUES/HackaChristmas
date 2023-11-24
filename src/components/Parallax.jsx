@@ -8,58 +8,8 @@ import PineTree from "../assets/pine-tree.png";
 import Village from "../assets/village.png";
 import Snow from "../assets/snow.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { gsap } from "gsap";
-// import { ScrollTriger } from "gsap/ScrollTrigger";
-// import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { useEffect } from "react";
-
 
 function Paralax() {
-  const slideInLeft = (elem, delay) => {
-    gsap.fromTo(
-      elem,
-      {
-        opacity: 0,
-        x: -200,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        delay: delay || 0.6,
-        scrollTrigger: {
-          trigger: elem,
-          start: "left center",
-          end: "right center",
-        },
-      }
-    );
-  };
-  const slideInBottom = (elem, delay) => {
-    gsap.fromTo(
-      elem,
-      {
-        opacity: 0,
-        y: -200,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        delay: delay || 0.6,
-        scrollTrigger: {
-          trigger: elem,
-          start: "top center",
-          end: "bottom center",
-        },
-      }
-    );
-  };
-
-useEffect(() => {
-  slideInLeft("#mountain1");
-}, [])
-useEffect(() => {
-  slideInBottom("#snow");
-}, []);
 
   return (
     <Parallax pages={2}>
@@ -80,9 +30,7 @@ useEffect(() => {
         <ParallaxLayer offset={0} speed={-3}>
           <img className="village" src={Village} alt="village" />
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={1}>
-          <img className="trineo" src={Trineo} alt="trineo" />
-        </ParallaxLayer>
+          <img id="trineo" className="trineo" src={Trineo} alt="trineo" />
         <img id="snow" className="snow" src={Snow} alt="snow" />
         <img
           id="mountain1"
