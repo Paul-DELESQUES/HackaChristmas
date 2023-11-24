@@ -2,6 +2,7 @@ import "./styles/App.scss";
 import Actions from "./components/Actions";
 import ParallaxEffect from "./components/ParallaxEffect";
 import Welcome from "./pages/Welcome";
+import Card from "./components/Card";
 import Room from "./pages/Room";
 import Paralax from "./components/Paralax";
 import Footer from "./components/Footer";
