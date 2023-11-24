@@ -8,14 +8,14 @@ const ParallaxEffect = () => {
       const tree = document.getElementById("tree");
       const tree2 = document.getElementById("tree2");
       const tree3 = document.getElementById("tree3");
-      const santa = document.getElementById("santa");
+      const santa2 = document.getElementById("santa2");
 
       let value = window.scrollY;
       snow.style.bottom = value * 0.9 + "%";
       tree.style.right = value * 0.3 + "px";
       tree2.style.right = value * 0.1 + "px";
       tree3.style.right = value * -0.1 + "px";
-      santa.style.left = value * 0.4 + "px";
+      santa2.style.left = value * 0.4 + "px";
     };
 
     window.addEventListener("scroll", handleScroll);

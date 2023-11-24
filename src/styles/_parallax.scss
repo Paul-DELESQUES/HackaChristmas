@@ -126,32 +126,34 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-.parallax-home img {
-  position: absolute;
-  object-fit: cover;
-  pointer-events: none;
-}
+  .parallax-home {
+    img {
+      position: absolute;
+      object-fit: cover;
+      pointer-events: none;
+    }
+  }
 
-.snow {
-  top: -15%;
-  width: 100%;
-}
+  .snow {
+    top: -15%;
+    width: 100%;
+  }
 
-.tree {
-  right: -80%;
-}
-.tree2 {
-  right: 70%;
-  bottom: 2%;
-}
-.tree3 {
-  right: 60%;
-}
+  .tree {
+    right: -80%;
+  }
+  .tree2 {
+    right: 70%;
+    bottom: 2%;
+  }
+  .tree3 {
+    right: 60%;
+  }
 
-.santa2 {
-  width: 40%;
-  left: 10%;
-  top: 60%;
-  transform: rotate(25deg);
+  .santa2 {
+    width: 40%;
+    left: 10%;
+    top: 60%;
+    transform: rotate(25deg);
+  }
 }
