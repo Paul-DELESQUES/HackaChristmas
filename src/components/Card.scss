@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
-* {
+.card_container {
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+  margin: 0 auto;
+  animation: translateRightToLeft 0.8s;
+  animation-fill-mode: forwards;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
   text-align: center;
+  background: linear-gradient(to bottom, #051c36 0%, #0a3b60 100%); /* W3C */
 
   --primary: hsl(82, 60%, 28%);
   --title-color: hsl(0, 0%, 15%);
@@ -16,15 +23,6 @@
   --font: "Roboto", sans-serif;
   --font-size-h2: 1.25rem;
   --small-font-size: 0.813rem;
-}
-
-.card_container {
-  place-items: center;
-  margin-inline: 1.5rem;
-  padding-block: 5rem;
-  margin: 0 auto;
-  animation: translateRightToLeft 0.8s;
-  animation-fill-mode: forwards;
 
   @keyframes translateRightToLeft {
     from {
@@ -39,8 +37,10 @@
     height: 200vh;
 
     .card_article {
-      position: relative;
+      position: absolute;
       overflow: hidden;
+      top: 12%;
+      left: 42%;
 
       .card_img {
         width: 20rem;

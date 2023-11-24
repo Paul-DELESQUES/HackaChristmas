@@ -23,14 +23,16 @@ function Room() {
   };
 
   return (
-    <section className="room-ctn">
-      <video src={room} autoPlay loop muted />
-      <Actions handleClick={handleClick} buttonStates={buttonStates} />
-      {!buttonStates.tree ? <TreeCanvas /> : ""}
-      {!buttonStates.santa ? <SantaCanvas /> : ""}
-      {!buttonStates.light ? <GarlandCanvas /> : ""}
-      {!buttonStates.socks ? <HouseTable /> : ""}
-    </section>
+    <>
+      <section className="room-ctn">
+        <video src={room} autoPlay loop muted />
+        <Actions handleClick={handleClick} buttonStates={buttonStates} />
+        {!buttonStates.tree ? <TreeCanvas /> : ""}
+        {!buttonStates.santa ? <SantaCanvas /> : ""}
+        {!buttonStates.light ? <GarlandCanvas /> : ""}
+        {!buttonStates.socks ? <HouseTable /> : ""}
+      </section>
+    </>
   );
 }
 

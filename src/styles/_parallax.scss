@@ -112,14 +112,6 @@ section {
   min-height: 100vh;
 }
 
-.test {
-  position: relative;
-  background-color: antiquewhite;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-}
-
 .parallax-home {
   background: linear-gradient(to bottom, #051c36 0%, #0a3b60 100%); /* W3C */
   position: relative;
@@ -127,6 +119,7 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: -3;
 }
 .parallax-home {
   img {
@@ -134,7 +127,7 @@ section {
     object-fit: cover;
     pointer-events: none;
   }
-  .snow {
+  .snow2 {
     top: -15%;
     width: 100%;
   }
@@ -143,17 +136,17 @@ section {
     right: -80%;
   }
   .tree2 {
-    right: 70%;
+    left: 0%;
     bottom: 2%;
   }
   .tree3 {
-    right: 60%;
+    left: 10%;
   }
 
   .santa {
     width: 40%;
     left: 10%;
     top: 60%;
-    transform: rotate(25deg);
+    transform: rotateY(40deg);
   }
 }

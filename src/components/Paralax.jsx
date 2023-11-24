@@ -6,8 +6,10 @@ import Mountain3 from "../assets/mountain3.png";
 import Trineo from "../assets/trineo-santa.png";
 import PineTree from "../assets/pine-tree.png";
 import Village from "../assets/village.png";
-import Snow from "../assets/snow.png";
+import Snow from "../assets/snow2.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import NavBar from "./Navbar";
+import ParallaxEffect from "./ParallaxEffect";
 
 function Paralax() {
   return (
@@ -31,7 +33,7 @@ function Paralax() {
             <img className="village" src={Village} alt="village" />
           </ParallaxLayer>
           <img id="trineo" className="trineo" src={Trineo} alt="trineo" />
-          <img id="snow" className="snow" src={Snow} alt="snow" />
+          {/* <img id="snow" className="snow" src={Snow} alt="snow" /> */}
           <img
             id="mountain1"
             className="mountain1"
@@ -39,6 +41,7 @@ function Paralax() {
             alt="mountain1"
           />
         </section>
+        <ParallaxEffect />
       </Parallax>
     </section>
   );

@@ -17,7 +17,7 @@ function Welcome() {
     }
   }, []);
 
-  return <div id="scratch" ref={scratchRef}></div>;
+  return <section id="scratch" ref={scratchRef}></section>;
 }
 
 export default Welcome;

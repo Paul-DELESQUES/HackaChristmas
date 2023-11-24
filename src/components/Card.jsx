@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Card.scss";
 
 function Card() {
@@ -16,9 +17,11 @@ function Card() {
                 Officia .
               </span>
               <h2 className="card_title">Père noel</h2>
-              <a href="#" className="card_button">
-                Read More
-              </a>
+              <Link to="/room">
+                <a href="#" className="card_button">
+                  Go to room !!
+                </a>
+              </Link>
             </div>
           </article>
         </div>
