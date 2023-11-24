@@ -27,7 +27,6 @@ const ParallaxEffect = () => {
 
   return (
     <div>
-      <section className="test"></section>
       <div className="snowflakes">
         <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i>
         <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i> <i></i>
@@ -40,10 +39,10 @@ const ParallaxEffect = () => {
       </div>
 
       <section className="parallax-home">
-        <img src="./src/assets/132.jpg" alt="" id="snow" className="snow" />
-        <img src="./src/assets/tree.png" alt="" id="tree" className="tree" />
-        <img src="./src/assets/tree.png" alt="" id="tree2" className="tree2" />
-        <img src="./src/assets/tree.png" alt="" id="tree3" className="tree3" />
+        <img src="./src/assets/snow.png" alt="" id="snow" className="snow" />
+        <img src="./src/assets/tree2.png" alt="" id="tree" className="tree" />
+        <img src="./src/assets/tree2.png" alt="" id="tree2" className="tree2" />
+        <img src="./src/assets/tree2.png" alt="" id="tree3" className="tree3" />
         <img
           src="./src/assets/santa.png"
           alt=""

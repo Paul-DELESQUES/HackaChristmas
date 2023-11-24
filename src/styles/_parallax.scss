@@ -1,8 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// html,
+// body {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
 .snowflakes {
   width: 100%;
@@ -126,14 +127,13 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  .parallax-home {
-    img {
-      position: absolute;
-      object-fit: cover;
-      pointer-events: none;
-    }
+}
+.parallax-home {
+  img {
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
   }
-
   .snow {
     top: -15%;
     width: 100%;
@@ -150,7 +150,7 @@ section {
     right: 60%;
   }
 
-  .santa2 {
+  .santa {
     width: 40%;
     left: 10%;
     top: 60%;
