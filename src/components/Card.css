@@ -28,6 +28,21 @@
   margin: 0 auto;
 }
 
+.card_container {
+  animation: translateRightToLeft 0.8s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes translateRightToLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 .card_article {
   position: relative;
   overflow: hidden;
