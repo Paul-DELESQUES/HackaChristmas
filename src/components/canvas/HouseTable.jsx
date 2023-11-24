@@ -13,7 +13,7 @@ const Tables = () => {
       <primitive
         object={table.scene}
         scale={2}
-        position={[-4, -6, -1.4]}
+        position={[-1, -6, -1.4]}
         rotation={[0.02, 0.2, -0.1]}
       />
       <spotLight
@@ -38,7 +38,7 @@ const House = () => {
       <primitive
         object={house.scene}
         scale={1.3}
-        position={[-2.5, 0.2, -1.2]}
+        position={[2, 0.2, -0.7]}
         rotation={[-0.02, -0.2, -0.1]}
       />
       <spotLight

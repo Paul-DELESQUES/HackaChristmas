@@ -13,7 +13,7 @@ const Tree = () => {
       <primitive
         object={treeChristmas.scene}
         scale={4}
-        position={[-4, -6, -1.4]}
+        position={[-5, -6, -1.8]}
         rotation={[-0.04, 0.2, 0.1]}
       />
       <spotLight
