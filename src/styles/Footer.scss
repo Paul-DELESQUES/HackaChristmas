@@ -1,17 +1,18 @@
-  @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Dancing+Script&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Dancing+Script&family=Poppins&display=swap");
 
 footer {
+  width: 100%;
   text-align: center;
   background-color: rgb(102, 6, 6);
 
   a {
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
     font-family: Poppins;
   }
   .social-media {
     display: flex;
-    margin:auto;
+    margin: auto;
     gap: 3rem;
     justify-content: center;
   }
@@ -21,7 +22,7 @@ footer {
   }
 
   span {
-    color: #000000;
+    color: #faebd7;
     bottom: 0;
     text-align: center;
   }

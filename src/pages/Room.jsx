@@ -9,12 +9,10 @@ import "../styles/Room.scss";
 
 function Room() {
   const [buttonStates, setButtonStates] = useState({
-    gift: true,
     socks: true,
     light: true,
     tree: true,
     santa: true,
-    cat: true,
     sound: true,
   });
 
