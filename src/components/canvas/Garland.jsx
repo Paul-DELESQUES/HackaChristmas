@@ -14,7 +14,7 @@ const Garlands = () => {
         object={garland.scene}
         scale={20}
         position={[-30, -13, 5]}
-        rotation={[-0.06, -2.2, 0]}
+        rotation={[-0.06, -2.2, 0.02]}
       />
       <spotLight
         position={[-40, 50, 10]}

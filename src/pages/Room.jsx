@@ -14,7 +14,6 @@ function Room() {
       <SantaCanvas />
       <HouseTable />
       <GarlandCanvas />
-      {/* <Garland2 /> */}
     </section>
   );
 }
